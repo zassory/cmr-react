@@ -1,7 +1,7 @@
 import { useLoaderData } from "react-router-dom";
 import { Cliente } from '../components';
 
-export function loader() {
+export const loader = () => {
 
   const clientes = [
     {

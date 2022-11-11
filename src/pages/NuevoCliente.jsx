@@ -1,5 +1,24 @@
-import { useNavigate } from 'react-router-dom';
+import { useNavigate , Form } from 'react-router-dom';
 import { Formulario } from '../components';
+
+export const action = async({request}) => {
+  const formData = await request.formData();//formData es algo que existe en el prototype
+
+  const datos = Object.fromEntries( formData );
+  console.log(datos);
+
+  //console.log([...formData]);
+
+  //console.log(formData.get('nombre'));
+
+  // const datos = new FormData();
+  // datos.append('nombre','Juan');
+
+  // fetch(url,{
+  //   body: datos,
+  //   method:"POST"
+  // })  
+}
 
 export const NuevoCliente = () => {
 
@@ -18,12 +37,16 @@ export const NuevoCliente = () => {
         </button>
       </div>
       <div className='bg-white shadow rounded-md md:w-3/4 mx-auto px-5 py-10 mt-20'>
-        <Formulario />
-        <input 
-          type="submit" 
-          className='mt-5 w-full bg-blue-800 p-3 uppercase font-bold text-white text-lg rounded-md'
-          value="Registrar Cliente"
-          />
+        <Form
+          method='post'
+        >
+          <Formulario />
+            <input 
+              type="submit" 
+              className='mt-5 w-full bg-blue-800 p-3 uppercase font-bold text-white text-lg rounded-md'
+              value="Registrar Cliente"
+            />
+        </Form>
       </div>
     </>
   )
