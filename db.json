@@ -1,0 +1,58 @@
+{
+  "clientes": [
+    {
+      "nombre": "Juan ",
+      "empresa": "Codigo Con Juan",
+      "email": "juan@juan.com",
+      "telefono": "102013313",
+      "notas": "Nueva Nota actualizada por nicolas",
+      "id": 1
+    },
+    {
+      "nombre": "Karen",
+      "empresa": "Codigo Con Juan",
+      "email": "karen_nuevo@juan.com",
+      "telefono": "138198313",
+      "notas": "Karen desea una REST API",
+      "id": 2
+    },
+    {
+      "id": 4,
+      "nombre": "Miguel",
+      "telefono": 319381983,
+      "email": "miguel@juan.com",
+      "empresa": "Codigo Con Juan"
+    },
+    {
+      "id": 5,
+      "nombre": "Pedro",
+      "telefono": 1398198938,
+      "email": "pedro@juan.com",
+      "empresa": "Codigo Con Juan"
+    },
+    {
+      "nombre": "Juan Desde React",
+      "empresa": "Codigo con Juan",
+      "email": "correo@correo.com",
+      "telefono": "10901",
+      "notas": "El Cliente desea un ecommerce",
+      "id": 6
+    },
+    {
+      "nombre": "Nicolas",
+      "empresa": "Expertech",
+      "email": "nicolas.programador@gmail.com",
+      "telefono": "963530707",
+      "notas": "Jamas debes olvidar esta humillacion por parte de tu propia familia.",
+      "id": 7
+    },
+    {
+      "nombre": "Hernan",
+      "empresa": "Ine",
+      "email": "hernanlatorre@ine.com",
+      "telefono": "963530707",
+      "notas": "abuelito hermoso",
+      "id": 8
+    }
+  ]
+}
